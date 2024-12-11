@@ -1,0 +1,670 @@
+prediction,groundtruth,reward,policy_loss,value_loss
+mark mark bar data team_name encoding x acc_road y aggregate sum acc_road transform group x,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x sort y desc,0.34375,0.0044067707,0.19097722
+mark data bar_catalog_entry_id encoding x y transform group x asc sort x asc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700 sort x asc,0.2,-0.0032923836,-0.22537905
+mark mark data location encoding x location y aggregate count location,mark arc data document_locations encoding x location_code y aggregate count location_code transform group x,0.2692307692307692,-0.0063886717,-0.3523046
+mark mark bar data employee_data encoding x is_full_time y aggregate mean employee_id transform group x sort y desc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x,0.375,0.01352779,0.053092152
+"mark data swimming_results;
+transform group name nationality id sort nationality desc;
+mark bar data swimming_results encoding x nationality y aggregate sum meter_100 transform group name n nationality x sort x desc y aggregate sum meter_100 .",mark bar data swimmer encoding x time y aggregate none meter_100,0.16666666666666666,0.0033932314,-0.084575385
+"mark data team;
+transform group team_id;
+mark bar data team encoding x team_id y none team_id aggregate percent acc_home",mark bar data basketball_match encoding x all_home y aggregate none team_id color acc_home transform group x sort x asc,0.2619047619047619,-0.004998157,0.05209458
+"mark data people;
+mark bar data weight y sort x desc ;",mark bar data people encoding x date_of_birth y aggregate none weight transform sort y desc,0.25,-0.011855389,0.015471935
+mark roomdata enc room_number x y aggregate count room_number transform group room_number y aggregate count room_number transform room_number y aggregate count room_number transform room_number y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count,mark bar data classroom encoding x building y aggregate count building transform filter capacity > 50 group x,0.18421052631578946,0.02115202,-0.09341988
+mark data products transform x name y aggregate bar none y price x sort x asc y desc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120 sort y asc,0.325,-0.021036046,0.12361902
+mark data bar dept_name x y aggregate mean salary y transform sort y asc,mark bar data instructor encoding x dept_name y aggregate mean salary transform group x sort y asc,0.4,0.014319844,-0.12511194
+"mark data sport_people;
+transform x meter_300 y aggregate count_distord ;
+mark bar data sport_people y aggregate count_distord x aggregate x sort y desc ;",mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y desc,0.23684210526315788,-0.0031434735,0.08043644
+mark data tourist_attraction encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort x asc,mark bar data tourist_attractions encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort x asc,0.4,0.005792554,-0.022112072
+mark data employee_name hire_date transform bin x aggregate count y sum x group x weekday y transform bin x transform aggregate bar y aggregate sum x by y department_id transform bin y transform aggregate x y aggregate bin y transform aggregate bar y transform aggregate x y aggregate bin y transform aggregate y mark bar y aggregate transform group x y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y,mark bar data employees encoding x hire_date y aggregate sum department_id transform filter hire_date < '2002-06-21' bin x by weekday,0.30952380952380953,0.0025982563,-0.093726486
+mark mark bar data sponsor_name encoding x occupation y aggregate count occupation transform group x sort y asc,mark bar data player encoding x occupation y aggregate count occupation transform group x sort y asc,0.43333333333333335,-0.0020129085,0.10888904
+mark data train encoding x grape y aggregate percent prop price transform group x year,mark arc data wine encoding x grape y aggregate count grape transform filter price > 100 group x,0.25,-0.014503259,0.0014609396
+"mark data team_data;
+transform team_data data encoding x y team_id y aggregate count team_id group x team_id mark bar data team_data;",mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y asc,0.2,0.009115964,-0.082214475
+mark data movies encoding x year y aggregate count bar budget transform group x,mark bar data movie encoding x year y aggregate count year transform sort budget_million bin x by year,0.2777777777777778,-0.013061279,0.08396658
+mark data player_votes encoding x occupation y aggregate count occupation transform group x y,mark bar data player encoding x occupation y aggregate count occupation transform group x sort y desc,0.3333333333333333,0.0043284073,-0.07679844
+mark bar weight data people_id encoding x date_of_birth y aggregate mean weight transform group x,mark bar data people encoding x date_of_birth y aggregate none weight transform sort x asc,0.7941176470588236,0.012562649,0.22452226
+mark data trans_employee_full_time group by employee_id sort is_full_time asc transform aggregate mean employee_id transform sort x asc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x sort x asc,0.3235294117647059,-0.006464651,-0.22336376
+mark hiring_data bar hire_date x aggregate mean manager_id y transform group weekday,mark bar data employees encoding x hire_date y aggregate mean manager_id transform filter hire_date < '2002-06-21' bin x by weekday,0.25,0.0059686736,0.03030172
+mark mark bar data team_id encoding x acc_road y aggregate count transform group x sort x asc,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x sort y asc,0.35294117647058826,-0.0061881025,-0.07051414
+mark data school merge x school_id y aggregate count all_neutral transform group x sort x,mark arc data basketball_match encoding x all_neutral y aggregate none school_id,0.20588235294117646,-0.0054973643,0.09502089
+mark bar data occupation encoding x occupation y aggregate count occupation transform group x,mark bar data player encoding x occupation y aggregate count occupation transform group x,0.9583333333333333,0.013733342,0.027941763
+mark mark bar data document_type encoding x document_type_code y aggregate count document_type_description transform group x sort y asc,mark bar data ref_document_types encoding x document_type_description y aggregate count document_type_description transform group x sort y desc,0.35294117647058826,0.000981444,-0.04331158
+mark data bar_data_pricing_by_product encoding x aggregate none y aggregate none transform group x sort x desc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700 sort x desc,0.25,-0.0031495348,-0.03830889
+mark mark bar data departments encoding x dept_code y aggregate count dept_code transform group x sort x asc,mark bar data department encoding x school_code y aggregate count distinct dept_name transform sort x desc,0.2631578947368421,0.0010955567,-0.013606027
+mark x data is_full_time transform sort y asc employee_id group x transform sort y asc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x sort y desc,0.28125,-0.010497943,0.020066679
+mark bar data departed encoding x y date_of_departed transform group x sort x desc,mark bar data dogs encoding x date_departed y aggregate count date_departed transform sort y asc bin x by weekday,0.2,0.01016528,0.036530286
+"mark data user_data enc role_code x y aggregate count role_code transform mark y , x sort y asc",mark arc data users encoding x role_code y aggregate count role_code transform group x,0.23529411764705882,-0.0070922915,-0.103237554
+mark mark bar data school_id transform group x sort y asc,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort x desc,0.28125,-0.017906625,-0.019064665
+"mark data dept_gpa , transform group stu_gpa , x sort stu_gpa asc mark dept_code y stu_gpa",mark bar data student encoding x dept_code y aggregate mean stu_gpa transform group x,0.23529411764705882,0.02656899,0.10232441
+mark mark bar data all_games transform group x y all_games_percent x aggregate count y all_games_percent,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent,0.2857142857142857,-0.0044706687,-0.0731526
+mark data bar school encoding x state y aggregate count enr transform group x sort x asc,mark bar data college encoding x cname y aggregate min enr transform group state sort y asc,0.3611111111111111,-0.0012748586,-0.013644576
+mark data carrier encoding x carrier y aggregate none carrier transform group x sort y asc,mark bar data phone encoding x carrier y aggregate count carrier transform group x sort y asc,0.36666666666666664,-0.007555496,0.034483165
+"mark data team_data_all_game , group acc_road , x , y , bar data acc_road , transform group , y aggregate count data , sort y asc , transform group x y",mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort x desc,0.3235294117647059,0.0025119148,-0.0019110143
+mark data record_company encoding x record_company y aggregate count record_company transform group y data conductor_id encoding x conductor_id y aggregate count conductor_id transform group y data orchestra_id encoding x orchestra_id y aggregate count orchestra_id transform group y data record_company aggregate count record_company transform y sort y asc,mark bar data orchestra encoding x record_company y aggregate count record_company transform group x sort y desc,0.3235294117647059,0.010479698,0.08736944
+mark mark bar data employee_id encoding x hire_date y aggregate mean employee_id transform order x asc .,mark bar data employees encoding x hire_date y aggregate mean employee_id transform filter hire_date < '2002-06-21' bin x by month,0.2619047619047619,-0.0035101147,0.025543094
+mark data climbers encoding x points y aggregate count y transform group x sort y desc,mark bar data climber encoding x country y aggregate count country transform group x sort y desc,0.34375,-0.0012810687,-0.15988652
+"mark data region year transform group year aggregate count y encircle y , color winery aggregate count y , hue year aggregate count y , y transform group year aggregate count y , color winery aggregate count y",mark bar data wine encoding x year y aggregate count year transform bin x by weekday,0.16666666666666666,-0.0018444415,0.3448252
+mark bar data booking_status_code encoding x booking_status_code y aggregate count booking_status_code transform group x sort y desc,mark arc data apartment_bookings encoding x booking_status_code y aggregate count booking_status_code transform group x,0.8333333333333333,0.008951111,-0.19629031
+mark bar data points mountain_id encoding x country y aggregate count climber_id transform group x sort y desc,mark bar data climber encoding x country y aggregate count country transform group x sort y desc,0.8823529411764706,-0.012907,-0.06867981
+mark bar data meter_300 x aggregate count y transform group id,mark bar data swimmer encoding x meter_300 y aggregate none id,0.7857142857142857,-0.0050752433,-0.0660733
+mark data tv_channels encoding x language y aggregate count channel transform group x sort y asc,mark bar data tv_channel encoding x language y aggregate count language transform group x sort x asc,0.375,0.016147852,0.18922818
+mark data bar points transform group x position y aggregate count points group x position,mark bar data player encoding x position y aggregate count position transform filter points < 30 group x,0.34375,-0.02763034,-0.06228745
+mark data set view bar chart measure time transform group by id sort in ascending y transform aggregate meter_100 transform aggregate group by id transform sort in ascending y transform aggregate meter_100,mark bar data swimmer encoding x time y aggregate none meter_100 transform sort y asc,0.1956521739130435,0.021529472,-0.07423109
+mark data bar chart team_name x acc_road y aggregate count acc_road group x team_id,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x,0.3,0.0043611126,-0.021067768
+mark data bar chart continent encoding x lifeexpectancy y aggregate mean lifeexpectancy transform group x sort y desc,mark bar data country encoding x continent y aggregate mean lifeexpectancy transform group x sort x desc,0.4375,-0.0019026878,-0.009760022
+mark data team_data encoding x acc_road y aggregate none color school_id transform group x acc_road,mark bar data basketball_match encoding x all_home y aggregate none school_id color acc_road transform group x sort x desc,0.3333333333333333,-0.00016121194,-0.04590997
+mark data bar id encoding x name y aggregate count nationality transform group x,mark bar data swimmer encoding x name y aggregate none id,0.3,-0.012011284,0.026891753
+mark data weather encoding x date y aggregate none transform group x sort x desc,mark bar data weather encoding x date y aggregate sum cloud_cover transform sort y desc bin x by weekday,0.2894736842105263,-0.002846459,0.012307063
+mark data playlist encoding x name y aggregate count playlist,mark bar data playlists encoding x name y aggregate count name transform group x sort x asc,0.26666666666666666,0.022615315,0.12257117
+mark mark bar data school_id encoding x acc_road y aggregate sum school_id transform group x sort y asc,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x sort y asc,0.4666666666666667,-0.012613531,-0.11208391
+mark enc bar x start_from y aggregate count start_from transform group x sort y desc,mark bar data hiring encoding x start_from y aggregate count start_from transform bin x by weekday,0.2222222222222222,0.0014873939,-0.035017014
+"mark data winery , encoding grape y aggregate count grape , transform group x asc sort y desc",mark bar data wine encoding x grape y aggregate count grape transform group x sort y desc,0.35294117647058826,1.6506761e-05,0.08927515
+mark bar data meter_100 transform x y aggregate sum y group x sort y asc,mark bar data swimmer encoding x time y aggregate none meter_100 transform sort x desc,0.7647058823529411,0.0007103905,-0.038224876
+mark bar data hand encoding x hand y aggregate count hand transform group y sort y desc,mark bar data players encoding x hand y aggregate count hand transform group x sort y desc,0.9642857142857143,0.0023748027,-0.04093273
+mark enc data mark x city y aggregate count lat transform sort x asc,mark bar data station encoding x city y aggregate max lat transform group x sort x asc,0.29411764705882354,-0.017271608,0.14015011
+mark data people encoding x date_of_birth y weight transform sort x asc,mark bar data people encoding x date_of_birth y aggregate none weight transform sort x desc,0.3333333333333333,0.021450315,-0.078023836
+mark data bar train_number encoding x time y aggregate none train_number transform group x y,mark bar data train encoding x time y aggregate none train_number transform filter destination = 'chennai' sort x,0.3055555555555556,-0.0059086476,-0.10159157
+"mark ### Data transform:
+### Data visualization:
+### Data analysis:
+### Data enrichment:
+### Data distribution:
+### Data trend:
+### Data relation:
+### Data comparison:
+### Data aggregation:
+### Data summary:
+### Data outlier:
+### Data ranking:
+### Data other:
+### Data unknown:
+### Data total:
+### Data names:
+### Data type:
+### Data source:
+### Data variable:
+### Data missing:
+### Data value:
+### Data group:
+### Data filter:
+### Data transform:
+### Data visualization:
+### Data analysis:
+### Data enrichment:
+### Data distribution:
+### Data trend:
+### Data relation:
+### Data comparison:
+### Data",mark bar data class encoding x class_room y aggregate count class_room transform group x,0.013513513513513514,0.007820048,0.22563449
+mark data _all enc x y aggregate max y group x transform y y enc,mark bar data weather encoding x date y aggregate count date transform filter max_temperature_f > 85 bin x by year,0.13636363636363635,-0.041548416,-0.1424534
+mark data department dog_id x encoding x y departed_date y aggregate departed_date group x sort y desc,mark bar data dogs encoding x date_departed y aggregate count date_departed transform sort y desc bin x by weekday,0.2,0.016756572,0.24937525
+mark data shop_id transform group x y aggregate x sort y desc,mark line data hiring encoding x start_from y aggregate mean employee_id transform bin x by year,0.15789473684210525,-0.008655433,-0.29387543
+mark data bar shop_id x aggregate employee_id y group x sort y desc,mark line data hiring encoding x start_from y aggregate mean employee_id transform sort x desc bin x by year,0.2,0.01818074,0.046032652
+mark data student_id encoding x date_address_from y aggregate mean date_address_to group x,mark line data student_addresses encoding x date_address_to y aggregate mean monthly_rental transform group x sort monthly_rental desc,0.2647058823529412,-0.0024831705,0.002619788
+mark data film_data encoding x title y number_in_season transform group bar data by directed_by,mark bar data film encoding x directed_by y aggregate count directed_by transform group x,0.28125,0.008632584,0.021896854
+mark enc data city encoding x latitude y aggregate max y latitude transform group x sort y desc,mark bar data station encoding x city y aggregate max lat transform group x sort y desc,0.35294117647058826,0.0021871608,0.07076912
+mark data weather encoding x date y aggregate sum cloud_cover transform group x sort y desc,mark bar data weather encoding x date y aggregate sum cloud_cover transform sort y asc bin x by weekday,0.3157894736842105,-0.010323398,-0.09876582
+mark mark bar data playlists encoding x name y aggregate none sort y asc,mark bar data playlists encoding x name y aggregate count name transform group x sort y desc,0.3125,0.0015586242,-0.024477988
+mark mark bar data good_customers encoding x first_name y gender_mf transform group y asc,mark bar data customers encoding x first_name y aggregate none gender_mf transform filter good_or_bad_customer = 'good' sort y asc,0.25,0.017273283,0.07137647
+mark mark bar data people_id encoding x sex y aggregate mean weight transform group x sort x desc,mark bar data people encoding x sex y aggregate mean weight transform group x sort x desc,0.4375,-0.00757997,-0.09017047
+mark mark bar data all_games encoding x acc_road y aggregate none sort x desc,mark bar data basketball_match encoding x all_home y aggregate none school_id color acc_road transform group x sort x desc,0.3055555555555556,-0.0054006306,-0.02523984
+mark mark bar data playlist encoding x name y aggregate count name transform group x sort y desc,mark bar data playlists encoding x name y aggregate count name transform group x sort x desc,0.43333333333333335,0.010529257,0.039636523
+mark mark bar data employee_id encoding x is_full_time y aggregate none transform group x sort x desc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x sort x desc,0.40625,-0.0032741553,0.025587842
+mark mark bar data all_games_percent encoding x team_id y transform aggregate percent,mark point data basketball_match encoding x team_id y aggregate none all_games_percent transform group all_home,0.28125,-0.007846339,0.016090065
+mark mark bar data train_num encoding x aggregate total count y transform sort y asc,mark bar data train encoding x name y aggregate count name transform group x sort y asc,0.34375,0.005369948,0.01036191
+mark bar data annual_entry_exit encoding x location y aggregate none group x mark bar transform sort x,mark arc data station encoding x location y aggregate count location transform group x,0.28125,-0.0032535298,-0.032147497
+mark mark bar data id encoding x meter_300 y aggregate count x,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y asc,0.3,0.0018229475,-0.033035517
+mark mark bar data product encoding x product_name y aggregate mean product_price transform group x,mark bar data products encoding x product_name y aggregate mean product_price transform group x,0.42857142857142855,0.008727714,0.0028935224
+mark data team_data encoding x y transform group x sort y desc,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y desc,0.28125,-0.016725522,0.17438902
+mark transform group data school_id encoding x acc_road y aggregate sum acc_road,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x,0.4230769230769231,0.012978297,-0.11499062
+mark data bar chart series_name encoding x language y aggregate count language transform group x sort y desc,mark bar data tv_channel encoding x language y aggregate count language transform group x sort x desc,0.40625,-0.0051153773,0.022693932
+mark mark bar data installation_date encoding x date y aggregate count installation_date transform group x,mark bar data station encoding x installation_date y aggregate count installation_date transform bin x by weekday,0.3125,-0.0037368257,-0.108497754
+"mark data player_id transform group yearid , sort yearid asc x , mark bar data yearid y encoding x group yearid",mark line data hall_of_fame encoding x yearid y aggregate count yearid transform sort x asc bin x by year,0.225,0.0037232693,0.091160715
+mark data year_player_info encoding x yearid y aggregate count sum ballots transform group x sort x desc,mark line data hall_of_fame encoding x yearid y aggregate count yearid transform sort x desc bin x by year,0.275,-0.00047467183,-0.047376648
+mark data bar graph sales_billion x name y aggregate none transform group sort y desc,mark bar data companies encoding x industry y aggregate count industry transform group x sort x desc,0.2777777777777778,-0.0011896361,0.090761825
+mark data claim_settlement_detail_by_claim_id_list join by x enc y aggregate count number date_claim_settled y transform group x sort y desc,mark bar data settlements encoding x date_claim_settled y aggregate count date_claim_settled transform bin x by year,0.21428571428571427,0.0063005844,-0.071489826
+mark data team_data encoding x team_id y team_id transform group x sort x asc mark bar data team_data encoding x team_id y team_id transform group x sort x asc,mark point data basketball_match encoding x team_id y aggregate none all_games_percent transform group all_home,0.2222222222222222,0.0019963654,-0.02930212
+mark department data department encoding x dept_code y aggregate count dept_name transform group x sort y asc,mark bar data department encoding x school_code y aggregate count distinct dept_name transform sort x asc,0.35294117647058826,-0.0021155542,0.009943068
+"mark data orchestra;
+transform group orchestra_id y no sort;
+mark bar data orchestra encoding x orchestra_id y group orchestra_id sort y asc .",mark bar data orchestra encoding x record_company y aggregate count record_company transform group x sort y asc,0.2631578947368421,-0.0045819823,-0.027753487
+"mark data team_data;
+transform group x team_id y aggregate count home acc_home sort y asc ;",mark bar data basketball_match encoding x all_home y aggregate none team_id color acc_home transform group x sort y asc,0.23809523809523808,-0.003973429,0.06355116
+"mark data team_data;
+transform team_data group by x y aggregate x y;
+mark bar data team_data encoding x y group x y;",mark point data basketball_match encoding x team_id y aggregate none all_games_percent transform group all_home,0.175,-0.004322159,0.021805823
+mark data team_players encoding x position y draft_pick_number color draft_class transform group x sort y desc,"mark bar data match_season encoding x draft_class y aggregate none draft_pick_number transform filter position = ""defender"" sort x desc",0.2619047619047619,0.015235433,0.058830336
+mark bar data customer_id encoding x other_account_details y aggregate count other_account_details transform group x sort y asc,mark bar data accounts encoding x other_account_details y aggregate count other_account_details transform group x sort y asc,0.9333333333333333,-0.006314562,-0.12307292
+"mark x department , y aggregate bar building , transform group x department",mark bar data department encoding x building y aggregate count building transform group x,0.34615384615384615,0.0026179506,0.026275352
+"mark data department , transform group x sort y asc",mark bar data course encoding x dept_code y aggregate sum crs_credit transform group x sort x asc,0.23529411764705882,-0.01492764,0.020413369
+mark data department; transform group x sort y asc numeric gpa; bar x data y aggregate mean gpa department .,mark bar data student encoding x dept_code y aggregate mean stu_gpa transform group x sort x asc,0.2619047619047619,0.003341537,0.12817587
+mark data team_acc_road_by_season aggregate bar data by x y team_id transform group x sort y desc,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort y desc,0.29411764705882354,9.582192e-05,-0.09015344
+mark data students_enrolment_monthly_encapsulated_mark encoding x date_of_enrolment y aggregate count enc data students_enrolment_monthly transform group x bin x mark bar,mark bar data student_course_enrolment encoding x date_of_enrolment y aggregate count date_of_enrolment transform bin x by month,0.3055555555555556,0.014004622,-0.03557597
+mark data people_id encoding x country y aggregate count people_id transform group x sort y desc,mark bar data people encoding x country y aggregate count country transform group x sort y desc,0.4,0.0008870873,-0.08874734
+mark data tourist_attraction_location_mark encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort y desc,mark bar data tourist_attractions encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort y asc,0.34375,-0.001653394,0.12684056
+mark data product encoding x sort price asc y aggregate count name transform group x sort order asc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120 sort x desc,0.20833333333333334,-0.00973676,-0.055034608
+"mark data document_type;
+transform group document_type_code encoding x sort y asc;
+mark bar data document_type encoding x document_type_description y aggregate count transform group y sort y asc;
+### Explanation:
+mark bar data document_type encoding x document_type_description y aggregate count transform group y sort y asc show .",mark bar data ref_document_types encoding x document_type_description y aggregate count document_type_description transform group x sort x desc,0.2608695652173913,0.0118283555,0.05345583
+mark data author_detail_by_password encoding x author_id y aggregate none password transform group x sort y,mark bar data course_authors_and_tutors encoding x password y aggregate none author_id transform sort personal_name,0.34375,-0.003571841,0.016523793
+mark bar dataset password encoding x author_id y aggregate count password transform group x sort x desc,mark bar data course_authors_and_tutors encoding x password y aggregate none author_id transform sort personal_name,0.2777777777777778,-0.0008672117,-0.13868374
+"mark bar data price transform group x sort y desc
+encoding x aggregate y none y encoding y sort y desc
+### Instruction:
+What are the names and prices of products that cost at least 180 , sorted by price decreasing and name ascending . Visualize by pie chart .
+### Input:
+[('code', 'numeric'), ('name', 'categorical'), ('price', 'numeric'), ('manufacturer', 'numeric')]
+### Response: mark
+data bar price transform group x sort y desc y encoding y aggregate y none y sort y desc encoding y",mark arc data products encoding x name y aggregate none price transform filter price >= 180 sort y desc name asc,0.6346153846153846,0.001427778,0.32564715
+mark data dog_data_cleaned encoding x date_of_birth y departed_date transform group x sort y desc,mark bar data dogs encoding x date_departed y aggregate count date_departed transform bin x by weekday,0.15,0.0029960922,-0.20896518
+mark bar data sex encoding x max agg age transform group x sort x asc,mark arc data student encoding x sex y aggregate max age transform group x,0.2647058823529412,-0.024249459,-0.12987962
+mark data bar start_from encoding x ord y aggregate none transform group x sort y desc,mark bar data hiring encoding x start_from y aggregate count start_from transform bin x by weekday,0.23684210526315788,0.01753792,0.07482881
+mark mark bar data cmi_details encoding x detail y aggregate count transform group x sort y desc,mark bar data customer_master_index encoding x cmi_details y aggregate none master_customer_id transform sort x desc,0.3235294117647059,0.00604216,0.009535506
+mark mark card_type_code encoding x transform group y encoding sort y asc,mark arc data customers_cards encoding x card_type_code y aggregate count card_type_code transform group x,0.25,-0.014125202,-0.08897847
+mark data mydata transform group x flag y aggregate count flag desc,mark bar data ship encoding x flag y aggregate count flag transform group x sort y desc,0.3333333333333333,-0.016087476,0.12411341
+mark data employee_mark encoding x hire_date y aggregate department_id transform group x sort y desc,mark bar data employees encoding x hire_date y aggregate mean department_id transform filter hire_date < '2002-06-21' bin x by month,0.20454545454545456,0.030420205,-0.070007324
+mark data films encoding x directed_by y aggregate count director transform group x sort y desc,mark bar data film encoding x directed_by y aggregate count directed_by transform group x,0.3125,-0.013516262,-0.006203383
+mark data ship_data transform group ship_id aggregate count flag encoding x y,mark bar data ship encoding x flag y aggregate count flag transform group x,0.35714285714285715,-0.006028462,0.06747161
+"mark data department ;
+mark bar dept_code encoding x sort y asc ;
+transform group x sort y asc ;
+### Instruction:
+Show the number of each department in each school , and I want to show by the x axis from high to low please .
+### Input:
+[('dept_code', 'categorical'), ('dept_name', 'categorical'), ('school_code', 'categorical'), ('emp_num', 'numeric'), ('dept_address', 'categorical'), ('dept_extension', 'categorical')]
+### Response: bar
+data department ;
+mark bar dept_code encoding x sort y asc ;
+transform group x sort y asc ;
+### Instruction:
+Show the number of each department in each school , and I want to show by the y axis from high to low please .
+### Input:
+[('dept_code', 'categorical'), ('dept_name', 'categorical'), ('school_code', 'categorical'), ('emp_num', 'numeric'), ('dept_address', 'categorical'), ('dept_extension', 'categorical')]
+### Response: bar
+data department ;
+mark bar dept_code encoding x sort y asc ;
+transform group x sort y asc ;
+### Instruction:
+Show the number of each department in each school , and I want to show by the y axis from high to low please .
+### Input:
+[('dept_code', 'categorical'), ('dept_name', 'categorical'), ('school_code', 'categorical'), ('emp_num', 'numeric'), ('dept_address', 'categorical'), ('dept_extension', 'categorical')]
+##",mark bar data department encoding x school_code y aggregate count distinct dept_name transform sort count(distinct dept_name) desc,0.07272727272727272,0.022463914,0.07056992
+mark data people aggregate count people_id transform group people_id sort country asc,mark bar data people encoding x country y aggregate count country transform group x,0.26666666666666666,-0.009940938,-0.13162036
+mark data employee_categorical encoding x city y aggregate count city transform group x sort x desc,mark arc data employee encoding x city y aggregate count city transform group x,0.3333333333333333,0.0018348116,-0.03667231
+"mark encircle data claim settled x date_claim_settled y aggregate count date_claim_settled
+### Hint:
+mark data aggregate count transform sort y asc",mark bar data settlements encoding x date_claim_settled y aggregate count date_claim_settled transform sort y desc bin x by year,0.20454545454545456,-0.0044383854,0.10284768
+mark data bar player encoding x occupation y aggregate count occupation transform group x sort y asc,mark bar data player encoding x occupation y aggregate count occupation transform group x sort y asc,0.5,0.0005425196,-0.06314416
+mark data bar chart meter_300 encoding x y aggregate mean transform sort x desc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort x desc,0.34375,0.0026368909,0.005688116
+"mark data games encoding x team_id y aggregate bar all_games_percent transform group x sort y desc
+### Explanation:
+[('team_id', 'numeric'), ('school_id', 'numeric'), ('team_name', 'categorical'), ('acc_regular_season', 'categorical'), ('acc_percent', 'categorical'), ('acc_home', 'categorical'), ('acc_road', 'categorical'), ('all_games', 'categorical'), ('all_games_percent', 'numeric'), ('all_home', 'categorical'), ('all_road', 'categorical'), ('all_neutral', 'categorical')]",mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort y asc,0.15151515151515152,0.009555761,0.24917974
+mark bar data student encoding x major y aggregate mean age transform group x sort y desc,mark bar data student encoding x sex y aggregate mean age transform group x sort x asc,0.8823529411764706,-0.008130851,-0.05303219
+mark data point_data encoding x position y aggregate frequency points transform group x sort y desc,mark bar data player encoding x position y aggregate count position transform filter points < 30 group x,0.25,-0.010794808,-0.13598529
+"mark transform data encoding x sex y aggregate mean weight
+### Response: bar
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: map
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bubble chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: box plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: box plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: scatter plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: violin plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: line chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex",mark bar data people encoding x sex y aggregate mean weight transform group x sort y asc,0.2222222222222222,0.017533641,0.08954036
+mark data bar_bar encoding x price_in_dollars y aggregate none transform group x sort y asc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700,0.225,-0.011127028,-0.031657666
+mark data bar chart meter_100 encoding x y transform group x sort y desc,mark bar data swimmer encoding x meter_300 y aggregate none meter_100,0.21875,0.00785151,-0.12138888
+"mark data wine;
+transform sort grape no;
+mark bar data grape encoding x sort y count transform sort y asc .",mark bar data wine encoding x grape y aggregate count grape transform group x sort y asc,0.3235294117647059,-0.015024974,0.05511111
+mark data employee_info encoding x y transform group x y aggregate count y sort x asc,mark point data employees encoding x salary y aggregate none manager_id transform filter hire_date < '2002-06-21',0.16666666666666666,-0.0024771634,-0.07026592
+mark data country encoding x country y aggregate proportions killed transform group x sort y desc,mark arc data perpetrator encoding x country y aggregate count country transform group x,0.28125,0.011158723,0.02835843
+mark data bar chart book_category encoding x category y aggregate count category transform sort x asc,mark bar data book_club encoding x category y aggregate count category transform group x sort x asc,0.375,-0.00026521645,-0.025484934
+"mark data bar chart language transform sort y desc x
+### Mark:
+mark bar data language encoding x language y aggregate count",mark bar data tv_channel encoding x language y aggregate count language transform group x sort x desc,0.35294117647058826,-0.009673333,0.08661486
+mark mark bar data train_num encoding x train_num y aggregate count sort y desc,mark bar data train encoding x name y aggregate count name transform group x sort y desc,0.3333333333333333,0.010640664,-0.14263767
+mark data apartments encoding x room_count y transform group x sort x asc,mark bar data apartments encoding x apt_number y aggregate none room_count,0.23333333333333334,-0.014615811,0.24932903
+mark bar data dept_name encoding x building transform group x sort y desc,mark bar data department encoding x building y aggregate count building transform group x sort y desc,0.36666666666666664,0.01582506,-0.2015474
+mark data employees encoding x hire_date y aggregate none group manager_id transform mark bar data employees encoding x hire_date y aggregate sort x asc transform mark bar data employees encoding x hire_date y aggregate none group manager_id transform aggregate none group x sort asc,mark point data employees encoding x salary y aggregate none manager_id transform filter hire_date < '2002-06-21',0.275,0.0057171416,0.037936896
+mark mark bar data class encoding x class y aggregate sum class transform group x sort y desc,mark arc data captain encoding x class y aggregate count class transform group x,0.28125,-0.0031501323,-0.055923805
+mark mark bar data train_num encoding x sort y asc name transform group x sort y asc asc name,mark bar data train encoding x name y aggregate count name transform group x sort x desc,0.3125,-0.01315549,0.012072399
+mark data team_data group by team_id transform sort team_id desc y all_home aggregate y mark bar data group by team_id sort y asc .,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y asc,0.25,0.008572254,0.065093815
+mark data all_games encoding x team_id y all_games_percent transform group x sort x asc,mark arc data basketball_match encoding x all_games y aggregate none all_games_percent,0.21875,0.010535358,-0.0537564
+mark bar data technicians encoding x age y aggregate none transform sort x asc,mark bar data technician encoding x name y aggregate count name transform group x sort age asc,0.8235294117647058,-0.018622486,0.062029347
+"mark enc data start_from transform group x sort y asc
+### Response: bar
+data start_from transform group x sort y asc
+### Response: bar chart
+data start_from transform group x sort y asc",mark bar data hiring encoding x start_from y aggregate count start_from transform bin x by weekday,0.1590909090909091,0.0059312545,0.14251937
+mark data team_data group by team_id sort desc acc_road asc bar data transform group by team_id sort acc_road asc bar encoding x encoding y transform aggregate data sort y asc,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort x desc,0.3333333333333333,0.008233903,-0.12463905
+mark bar data openning_year encoding x y group aggregate sum capacity transform sort y desc,mark line data cinema encoding x openning_year y aggregate sum capacity transform sort x desc bin x by year,0.8157894736842105,-0.0037642359,-0.07360624
+mark data bar graph acc_regular_season x team_id y aggregate acc_regular_season sort x desc,mark bar data basketball_match encoding x all_home y aggregate none team_id color acc_home transform group x sort x desc,0.23684210526315788,0.004063236,-0.021506548
+mark mark bar data crs_credit encoding x dept_code y aggregate total sum crs_credit transform group x sort y asc,mark bar data course encoding x dept_code y aggregate sum crs_credit transform group x sort y asc,0.4375,-0.0024194573,0.080117404
+mark data apartment_list encoding x room_count y aggregate count room_count transform group x sort y desc,mark bar data apartments encoding x apt_number y aggregate none room_count transform sort y desc,0.29411764705882354,-0.0004328657,-0.08644785
+mark data team_data encode x school_id y aggregate mean team_id transform group x sort y desc,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y desc,0.3055555555555556,0.0048776465,0.051565185
+mark data exhibition_data_transpose_mark encoding x year y aggregate none transform group y year sort y desc,mark bar data exhibition encoding x year y aggregate count year transform filter ticket_price < 15 group theme,0.21428571428571427,-0.00886929,0.04444915
+"mark gameid aggregate hgroup id transform sort y desc
+### Explanation:
+mark bar data gameid encoding x gameid y aggregate transform sort y desc",mark point data plays_games encoding x gameid y aggregate sum hours_played transform group x,0.2,0.0034220023,0.05484903
+mark mark bar data vote_id encoding x state y aggregate count state transform group x sort y desc,mark arc data votes encoding x state y aggregate count state transform group x,0.3125,0.006294299,-0.122937486
+"mark data people;
+mark bar data weight y asc order data date_of_birth x desc .",mark bar data people encoding x date_of_birth y aggregate none weight transform sort y desc,0.2222222222222222,-0.019824868,0.10139765
+mark data tourist_attraction_mark encoding x how_to_get_there y aggregate none transform group how_to_get_there sort y asc,mark bar data tourist_attractions encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort x asc,0.34375,0.016403351,-0.07465023
+mark data team_info_bar_chart encoding x acc_road y aggregate count acc_road transform group x sort y desc,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort y desc,0.4,0.003718045,0.098824054
+"mark data train;
+transform train encoding x y origin;
+bar y aggregate count origin;
+### Explanation:
+mark bar data , encoding x y aggregate count origin .",mark bar data train encoding x origin y aggregate count origin transform group x sort y asc,0.25,-0.009096466,-0.044151157
+"mark bar data days encoding x transform group x sort y desc
+### Explanation:
+mark bar data , transform group x y aggregate mean credit sort y desc .",mark bar data course encoding x days y aggregate mean credits transform group x sort credits,0.8,-0.010780534,-0.012446031
+mark data bar meter_100 transform group x sort y desc,mark bar data swimmer encoding x time y aggregate none meter_100 transform sort y desc,0.3,0.0011204127,-0.018923506
+mark data bar meter_300 encoding x id y transform sort y asc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y asc,0.39285714285714285,3.363751e-05,-0.017916366
+mark data product_category_code encoding x product_name y aggregate product_category_code transform group sort product_name,mark arc data products encoding x product_category_code y aggregate mean product_price transform group x,0.3,0.005337122,0.10038267
+mark bar data people_id encoding x weight y transform group height sort y asc,mark bar data people encoding x date_of_birth y aggregate none weight transform sort y asc,0.29411764705882354,-0.018142689,-0.040558696
+mark data transfiguration_2017_meet_2017 encoding x id y aggregate none name transform group sort y asc,mark bar data swimmer encoding x name y aggregate none id transform sort x asc,0.375,0.02240486,-0.040206373
+mark data bar chart time x sorting y asc sorting g meter_100 y transform group x sort y asc data metric_100 y transform group x sort y asc transform sort y desc,mark bar data swimmer encoding x time y aggregate none meter_100,0.175,-0.007952186,0.14442655
+mark data good_customers encoding x first_name y gender_mf transform sort y asc,mark bar data customers encoding x first_name y aggregate none gender_mf transform filter good_or_bad_customer = 'good' sort x asc,0.2631578947368421,0.012265411,-0.06358129
+mark data bar chart city encoding x city y transform sort y desc,mark bar data station encoding x city y aggregate max lat transform group x sort x desc,0.3125,-0.015586541,-0.13523787
+mark mark bar data budget_type_code encoding x budget_type_code y transform sort y desc,mark arc data documents_with_expenses encoding x budget_type_code y aggregate count budget_type_code transform group x,0.23333333333333334,0.018899802,0.035366774
+mark data team_id school_id team_name acc_regular_season acc_percent acc_home acc_road all_games all_games_percent all_home all_road all_neutral transform group y sort desc all_games_percent,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort y desc,0.16,0.0008214107,-0.030171916
+mark mark bar data people encoding x sex y transform sort y asc,mark arc data people encoding x sex y aggregate mean weight transform group x,0.25,-0.01781736,0.011258766
+mark mark bar data employees encoding x job_id y aggregate none salary transform group sort job_id,mark bar data employees encoding x job_id y aggregate sum salary transform filter hire_date < '2002-06-21' group x,0.3157894736842105,0.017497487,0.006315902
+mark mark bar data all_games encoding x all_games_percent y transform sort y asc,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort x asc,0.39285714285714285,-0.00049766875,-0.03236322
+mark data bar product encoding x name y aggregate count price transform sort y desc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120 sort y desc,0.2857142857142857,-0.0061122254,0.31532633
+mark bar data catalog_entry_name encoding x sort price_in_dollars asc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700 sort x asc,0.25,-0.004499158,-0.25161654
+mark mark bar data budget_type_code encoding x sort y asc data budget_type_code transform group sort y,mark arc data documents_with_expenses encoding x budget_type_code y aggregate count budget_type_code transform group x,0.26666666666666666,-0.0013667056,0.28189743
+mark mark bar data author_id encoding x gender_mf y transform sort y,mark bar data course_authors_and_tutors encoding x family_name y aggregate none gender_mf transform sort personal_name,0.3,0.009815082,-0.23883286
+mark data trans_ship encoding x flag y transform sort y desc,mark bar data ship encoding x flag y aggregate count flag transform group x sort x desc,0.3,-0.013708591,0.019622654
+mark data bar chart name product encoding x price y transform sort y desc,mark arc data products encoding x name y aggregate none price transform filter price >= 180 sort y desc name asc,0.23809523809523808,0.0051318705,-0.13412493
+mark data transit_stations encoding x installation_date y aggregate count transform group sort x,mark bar data station encoding x installation_date y aggregate count installation_date transform bin x by weekday,0.2647058823529412,0.008698879,0.10374053
+mark enc_school_data bar data school encoding x sort y enr asc,mark bar data college encoding x cname y aggregate min enr transform group state sort y asc,0.25,-0.034732364,-0.049444214
+mark mark bar data singer encoding x age y transform sort y desc,mark bar data singer encoding x country y aggregate mean age transform group x,0.3,0.039234422,-0.062445357
+mark data authors encoding x family_name y aggregate bar gender_mf transform sort y asc,mark bar data course_authors_and_tutors encoding x family_name y aggregate none gender_mf transform sort personal_name,0.34375,-0.009613059,0.119776845
+mark data department encoding x dept_code y aggregate count dept_name transform group dept_code sort y desc,mark bar data department encoding x school_code y aggregate count distinct dept_name,0.2647058823529412,0.0041749906,-0.1168202
+mark data team_id school_id team_name acc_regular_season acc_percent acc_home acc_road all_games all_games_percent all_home all_road all_neutral encoding x sort y group y desc,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort x desc,0.18,0.00045541953,0.012812465
+mark mark data team encoding x acc_regular_season y acc_percent transform sort y asc,mark point data basketball_match encoding x school_id y aggregate none all_games_percent transform group acc_regular_season,0.19444444444444445,-0.017061839,0.029080257
+mark data bar id encoding x name transform group y aggregate sum name,mark bar data swimmer encoding x name y aggregate none id transform sort x desc,0.3125,-0.014069714,0.17866372
+mark mark bar data meter encoding x meter_300 y transform sort y asc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y asc,0.3333333333333333,0.023235777,-0.22036874
+mark mark bar data product_price encoding x product_category_code transform sort product_price asc,mark arc data products encoding x product_category_code y aggregate mean product_price transform group x,0.21875,0.0031053154,0.013736129
+mark mark bar data dept encoding x building y aggregate count building transform sort y asc,mark bar data department encoding x building y aggregate count building transform group x,0.3333333333333333,-0.0017045662,0.08007005
+mark mark bar data investor encoding x sort investor y transform aggregate encircle,mark arc data entrepreneur encoding x investor y aggregate count investor transform group x,0.26666666666666666,-0.030223384,0.054831326
+mark mark bar data services encoding x services y transform sort y desc,mark bar data station encoding x services y aggregate count services transform group x,0.2857142857142857,0.026435811,-0.10812725
+mark mark bar data student encoding y transform sort y desc,mark bar data student encoding x dept_code y aggregate mean stu_gpa transform group x sort y desc,0.3,-0.015975054,0.050097257
+mark mark bar data price encoding x price y transform sort y asc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120,0.21052631578947367,0.037724763,-0.011711344
+mark mark bar data school encoding x aggregate count school_id transform sort x,mark arc data school encoding x county y aggregate count county transform group x,0.26666666666666666,-0.040102378,0.28230533
+mark mark bar data fate encoding x aggregate count sort y desc,mark bar data mission encoding x fate y aggregate count fate transform group x sort x asc,0.3333333333333333,0.017813597,-0.29756194
+mark bar data room encoding x decor y transform group decor,mark bar data rooms encoding x decor y aggregate min baseprice transform group x sort y desc,0.28125,-0.02523823,0.010519102
+mark mark bar data employee encoding x aggregate data transform sort y desc,"mark line data employees encoding x hire_date y aggregate none manager_id transform filter salary between 8000 and 12000 and commission_pct != ""null"" or department_id != 40",0.125,0.0024925545,-0.05598484
+mark mark bar data team encoding x team_id y acc_road transform sort y asc,mark bar data basketball_match encoding x all_home y aggregate none school_id color acc_road transform group x sort y asc,0.2631578947368421,0.027655717,0.10913445
+mark mark bar data id encoding x meter_300 y transform sort y desc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort x desc,0.39285714285714285,0.0046852417,-0.055748314
+mark guest_id encoding x datum y encoding x gender_code encoding x sort y desc,"mark bar data guests encoding x date_of_birth y aggregate count date_of_birth transform filter gender_code = ""male"" bin x by weekday",0.11363636363636363,-0.017081086,-0.017131373
+mark enc data winery x year y aggregate max price transform sort y desc,mark line data wine encoding x year y aggregate max price transform group x,0.2647058823529412,0.008302737,-0.07047038
+mark mark bar data applications encoding x software_platform y transform group y,mark arc data device encoding x software_platform y aggregate count software_platform transform group x,0.2857142857142857,0.003491656,0.058343604
+mark datamark bar date_moved_in encoding x y sort y desc,mark bar data customer_events encoding x date_moved_in y aggregate count date_moved_in transform sort y asc bin x by year,0.19444444444444445,0.0019143177,0.17537582
+prediction,groundtruth,reward,policy_loss,value_loss
+mark mark bar data team_name encoding x acc_road y aggregate sum acc_road transform group x,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x sort y desc,0.34375,0.0044067707,0.19097722
+mark data bar_catalog_entry_id encoding x y transform group x asc sort x asc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700 sort x asc,0.2,-0.0032923836,-0.22537905
+mark mark data location encoding x location y aggregate count location,mark arc data document_locations encoding x location_code y aggregate count location_code transform group x,0.2692307692307692,-0.0063886717,-0.3523046
+mark mark bar data employee_data encoding x is_full_time y aggregate mean employee_id transform group x sort y desc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x,0.375,0.01352779,0.053092152
+"mark data swimming_results;
+transform group name nationality id sort nationality desc;
+mark bar data swimming_results encoding x nationality y aggregate sum meter_100 transform group name n nationality x sort x desc y aggregate sum meter_100 .",mark bar data swimmer encoding x time y aggregate none meter_100,0.16666666666666666,0.0033932314,-0.084575385
+"mark data team;
+transform group team_id;
+mark bar data team encoding x team_id y none team_id aggregate percent acc_home",mark bar data basketball_match encoding x all_home y aggregate none team_id color acc_home transform group x sort x asc,0.2619047619047619,-0.004998157,0.05209458
+"mark data people;
+mark bar data weight y sort x desc ;",mark bar data people encoding x date_of_birth y aggregate none weight transform sort y desc,0.25,-0.011855389,0.015471935
+mark roomdata enc room_number x y aggregate count room_number transform group room_number y aggregate count room_number transform room_number y aggregate count room_number transform room_number y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count room_number transform x y aggregate count,mark bar data classroom encoding x building y aggregate count building transform filter capacity > 50 group x,0.18421052631578946,0.02115202,-0.09341988
+mark data products transform x name y aggregate bar none y price x sort x asc y desc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120 sort y asc,0.325,-0.021036046,0.12361902
+mark data bar dept_name x y aggregate mean salary y transform sort y asc,mark bar data instructor encoding x dept_name y aggregate mean salary transform group x sort y asc,0.4,0.014319844,-0.12511194
+"mark data sport_people;
+transform x meter_300 y aggregate count_distord ;
+mark bar data sport_people y aggregate count_distord x aggregate x sort y desc ;",mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y desc,0.23684210526315788,-0.0031434735,0.08043644
+mark data tourist_attraction encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort x asc,mark bar data tourist_attractions encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort x asc,0.4,0.005792554,-0.022112072
+mark data employee_name hire_date transform bin x aggregate count y sum x group x weekday y transform bin x transform aggregate bar y aggregate sum x by y department_id transform bin y transform aggregate x y aggregate bin y transform aggregate bar y transform aggregate x y aggregate bin y transform aggregate y mark bar y aggregate transform group x y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y aggregate transform aggregate x y aggregate bin y transform aggregate bar y,mark bar data employees encoding x hire_date y aggregate sum department_id transform filter hire_date < '2002-06-21' bin x by weekday,0.30952380952380953,0.0025982563,-0.093726486
+mark mark bar data sponsor_name encoding x occupation y aggregate count occupation transform group x sort y asc,mark bar data player encoding x occupation y aggregate count occupation transform group x sort y asc,0.43333333333333335,-0.0020129085,0.10888904
+mark data train encoding x grape y aggregate percent prop price transform group x year,mark arc data wine encoding x grape y aggregate count grape transform filter price > 100 group x,0.25,-0.014503259,0.0014609396
+"mark data team_data;
+transform team_data data encoding x y team_id y aggregate count team_id group x team_id mark bar data team_data;",mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y asc,0.2,0.009115964,-0.082214475
+mark data movies encoding x year y aggregate count bar budget transform group x,mark bar data movie encoding x year y aggregate count year transform sort budget_million bin x by year,0.2777777777777778,-0.013061279,0.08396658
+mark data player_votes encoding x occupation y aggregate count occupation transform group x y,mark bar data player encoding x occupation y aggregate count occupation transform group x sort y desc,0.3333333333333333,0.0043284073,-0.07679844
+mark bar weight data people_id encoding x date_of_birth y aggregate mean weight transform group x,mark bar data people encoding x date_of_birth y aggregate none weight transform sort x asc,0.7941176470588236,0.012562649,0.22452226
+mark data trans_employee_full_time group by employee_id sort is_full_time asc transform aggregate mean employee_id transform sort x asc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x sort x asc,0.3235294117647059,-0.006464651,-0.22336376
+mark hiring_data bar hire_date x aggregate mean manager_id y transform group weekday,mark bar data employees encoding x hire_date y aggregate mean manager_id transform filter hire_date < '2002-06-21' bin x by weekday,0.25,0.0059686736,0.03030172
+mark mark bar data team_id encoding x acc_road y aggregate count transform group x sort x asc,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x sort y asc,0.35294117647058826,-0.0061881025,-0.07051414
+mark data school merge x school_id y aggregate count all_neutral transform group x sort x,mark arc data basketball_match encoding x all_neutral y aggregate none school_id,0.20588235294117646,-0.0054973643,0.09502089
+mark bar data occupation encoding x occupation y aggregate count occupation transform group x,mark bar data player encoding x occupation y aggregate count occupation transform group x,0.9583333333333333,0.013733342,0.027941763
+mark mark bar data document_type encoding x document_type_code y aggregate count document_type_description transform group x sort y asc,mark bar data ref_document_types encoding x document_type_description y aggregate count document_type_description transform group x sort y desc,0.35294117647058826,0.000981444,-0.04331158
+mark data bar_data_pricing_by_product encoding x aggregate none y aggregate none transform group x sort x desc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700 sort x desc,0.25,-0.0031495348,-0.03830889
+mark mark bar data departments encoding x dept_code y aggregate count dept_code transform group x sort x asc,mark bar data department encoding x school_code y aggregate count distinct dept_name transform sort x desc,0.2631578947368421,0.0010955567,-0.013606027
+mark x data is_full_time transform sort y asc employee_id group x transform sort y asc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x sort y desc,0.28125,-0.010497943,0.020066679
+mark bar data departed encoding x y date_of_departed transform group x sort x desc,mark bar data dogs encoding x date_departed y aggregate count date_departed transform sort y asc bin x by weekday,0.2,0.01016528,0.036530286
+"mark data user_data enc role_code x y aggregate count role_code transform mark y , x sort y asc",mark arc data users encoding x role_code y aggregate count role_code transform group x,0.23529411764705882,-0.0070922915,-0.103237554
+mark mark bar data school_id transform group x sort y asc,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort x desc,0.28125,-0.017906625,-0.019064665
+"mark data dept_gpa , transform group stu_gpa , x sort stu_gpa asc mark dept_code y stu_gpa",mark bar data student encoding x dept_code y aggregate mean stu_gpa transform group x,0.23529411764705882,0.02656899,0.10232441
+mark mark bar data all_games transform group x y all_games_percent x aggregate count y all_games_percent,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent,0.2857142857142857,-0.0044706687,-0.0731526
+mark data bar school encoding x state y aggregate count enr transform group x sort x asc,mark bar data college encoding x cname y aggregate min enr transform group state sort y asc,0.3611111111111111,-0.0012748586,-0.013644576
+mark data carrier encoding x carrier y aggregate none carrier transform group x sort y asc,mark bar data phone encoding x carrier y aggregate count carrier transform group x sort y asc,0.36666666666666664,-0.007555496,0.034483165
+"mark data team_data_all_game , group acc_road , x , y , bar data acc_road , transform group , y aggregate count data , sort y asc , transform group x y",mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort x desc,0.3235294117647059,0.0025119148,-0.0019110143
+mark data record_company encoding x record_company y aggregate count record_company transform group y data conductor_id encoding x conductor_id y aggregate count conductor_id transform group y data orchestra_id encoding x orchestra_id y aggregate count orchestra_id transform group y data record_company aggregate count record_company transform y sort y asc,mark bar data orchestra encoding x record_company y aggregate count record_company transform group x sort y desc,0.3235294117647059,0.010479698,0.08736944
+mark mark bar data employee_id encoding x hire_date y aggregate mean employee_id transform order x asc .,mark bar data employees encoding x hire_date y aggregate mean employee_id transform filter hire_date < '2002-06-21' bin x by month,0.2619047619047619,-0.0035101147,0.025543094
+mark data climbers encoding x points y aggregate count y transform group x sort y desc,mark bar data climber encoding x country y aggregate count country transform group x sort y desc,0.34375,-0.0012810687,-0.15988652
+"mark data region year transform group year aggregate count y encircle y , color winery aggregate count y , hue year aggregate count y , y transform group year aggregate count y , color winery aggregate count y",mark bar data wine encoding x year y aggregate count year transform bin x by weekday,0.16666666666666666,-0.0018444415,0.3448252
+mark bar data booking_status_code encoding x booking_status_code y aggregate count booking_status_code transform group x sort y desc,mark arc data apartment_bookings encoding x booking_status_code y aggregate count booking_status_code transform group x,0.8333333333333333,0.008951111,-0.19629031
+mark bar data points mountain_id encoding x country y aggregate count climber_id transform group x sort y desc,mark bar data climber encoding x country y aggregate count country transform group x sort y desc,0.8823529411764706,-0.012907,-0.06867981
+mark bar data meter_300 x aggregate count y transform group id,mark bar data swimmer encoding x meter_300 y aggregate none id,0.7857142857142857,-0.0050752433,-0.0660733
+mark data tv_channels encoding x language y aggregate count channel transform group x sort y asc,mark bar data tv_channel encoding x language y aggregate count language transform group x sort x asc,0.375,0.016147852,0.18922818
+mark data bar points transform group x position y aggregate count points group x position,mark bar data player encoding x position y aggregate count position transform filter points < 30 group x,0.34375,-0.02763034,-0.06228745
+mark data set view bar chart measure time transform group by id sort in ascending y transform aggregate meter_100 transform aggregate group by id transform sort in ascending y transform aggregate meter_100,mark bar data swimmer encoding x time y aggregate none meter_100 transform sort y asc,0.1956521739130435,0.021529472,-0.07423109
+mark data bar chart team_name x acc_road y aggregate count acc_road group x team_id,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x,0.3,0.0043611126,-0.021067768
+mark data bar chart continent encoding x lifeexpectancy y aggregate mean lifeexpectancy transform group x sort y desc,mark bar data country encoding x continent y aggregate mean lifeexpectancy transform group x sort x desc,0.4375,-0.0019026878,-0.009760022
+mark data team_data encoding x acc_road y aggregate none color school_id transform group x acc_road,mark bar data basketball_match encoding x all_home y aggregate none school_id color acc_road transform group x sort x desc,0.3333333333333333,-0.00016121194,-0.04590997
+mark data bar id encoding x name y aggregate count nationality transform group x,mark bar data swimmer encoding x name y aggregate none id,0.3,-0.012011284,0.026891753
+mark data weather encoding x date y aggregate none transform group x sort x desc,mark bar data weather encoding x date y aggregate sum cloud_cover transform sort y desc bin x by weekday,0.2894736842105263,-0.002846459,0.012307063
+mark data playlist encoding x name y aggregate count playlist,mark bar data playlists encoding x name y aggregate count name transform group x sort x asc,0.26666666666666666,0.022615315,0.12257117
+mark mark bar data school_id encoding x acc_road y aggregate sum school_id transform group x sort y asc,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x sort y asc,0.4666666666666667,-0.012613531,-0.11208391
+mark enc bar x start_from y aggregate count start_from transform group x sort y desc,mark bar data hiring encoding x start_from y aggregate count start_from transform bin x by weekday,0.2222222222222222,0.0014873939,-0.035017014
+"mark data winery , encoding grape y aggregate count grape , transform group x asc sort y desc",mark bar data wine encoding x grape y aggregate count grape transform group x sort y desc,0.35294117647058826,1.6506761e-05,0.08927515
+mark bar data meter_100 transform x y aggregate sum y group x sort y asc,mark bar data swimmer encoding x time y aggregate none meter_100 transform sort x desc,0.7647058823529411,0.0007103905,-0.038224876
+mark bar data hand encoding x hand y aggregate count hand transform group y sort y desc,mark bar data players encoding x hand y aggregate count hand transform group x sort y desc,0.9642857142857143,0.0023748027,-0.04093273
+mark enc data mark x city y aggregate count lat transform sort x asc,mark bar data station encoding x city y aggregate max lat transform group x sort x asc,0.29411764705882354,-0.017271608,0.14015011
+mark data people encoding x date_of_birth y weight transform sort x asc,mark bar data people encoding x date_of_birth y aggregate none weight transform sort x desc,0.3333333333333333,0.021450315,-0.078023836
+mark data bar train_number encoding x time y aggregate none train_number transform group x y,mark bar data train encoding x time y aggregate none train_number transform filter destination = 'chennai' sort x,0.3055555555555556,-0.0059086476,-0.10159157
+"mark ### Data transform:
+### Data visualization:
+### Data analysis:
+### Data enrichment:
+### Data distribution:
+### Data trend:
+### Data relation:
+### Data comparison:
+### Data aggregation:
+### Data summary:
+### Data outlier:
+### Data ranking:
+### Data other:
+### Data unknown:
+### Data total:
+### Data names:
+### Data type:
+### Data source:
+### Data variable:
+### Data missing:
+### Data value:
+### Data group:
+### Data filter:
+### Data transform:
+### Data visualization:
+### Data analysis:
+### Data enrichment:
+### Data distribution:
+### Data trend:
+### Data relation:
+### Data comparison:
+### Data",mark bar data class encoding x class_room y aggregate count class_room transform group x,0.013513513513513514,0.007820048,0.22563449
+mark data _all enc x y aggregate max y group x transform y y enc,mark bar data weather encoding x date y aggregate count date transform filter max_temperature_f > 85 bin x by year,0.13636363636363635,-0.041548416,-0.1424534
+mark data department dog_id x encoding x y departed_date y aggregate departed_date group x sort y desc,mark bar data dogs encoding x date_departed y aggregate count date_departed transform sort y desc bin x by weekday,0.2,0.016756572,0.24937525
+mark data shop_id transform group x y aggregate x sort y desc,mark line data hiring encoding x start_from y aggregate mean employee_id transform bin x by year,0.15789473684210525,-0.008655433,-0.29387543
+mark data bar shop_id x aggregate employee_id y group x sort y desc,mark line data hiring encoding x start_from y aggregate mean employee_id transform sort x desc bin x by year,0.2,0.01818074,0.046032652
+mark data student_id encoding x date_address_from y aggregate mean date_address_to group x,mark line data student_addresses encoding x date_address_to y aggregate mean monthly_rental transform group x sort monthly_rental desc,0.2647058823529412,-0.0024831705,0.002619788
+mark data film_data encoding x title y number_in_season transform group bar data by directed_by,mark bar data film encoding x directed_by y aggregate count directed_by transform group x,0.28125,0.008632584,0.021896854
+mark enc data city encoding x latitude y aggregate max y latitude transform group x sort y desc,mark bar data station encoding x city y aggregate max lat transform group x sort y desc,0.35294117647058826,0.0021871608,0.07076912
+mark data weather encoding x date y aggregate sum cloud_cover transform group x sort y desc,mark bar data weather encoding x date y aggregate sum cloud_cover transform sort y asc bin x by weekday,0.3157894736842105,-0.010323398,-0.09876582
+mark mark bar data playlists encoding x name y aggregate none sort y asc,mark bar data playlists encoding x name y aggregate count name transform group x sort y desc,0.3125,0.0015586242,-0.024477988
+mark mark bar data good_customers encoding x first_name y gender_mf transform group y asc,mark bar data customers encoding x first_name y aggregate none gender_mf transform filter good_or_bad_customer = 'good' sort y asc,0.25,0.017273283,0.07137647
+mark mark bar data people_id encoding x sex y aggregate mean weight transform group x sort x desc,mark bar data people encoding x sex y aggregate mean weight transform group x sort x desc,0.4375,-0.00757997,-0.09017047
+mark mark bar data all_games encoding x acc_road y aggregate none sort x desc,mark bar data basketball_match encoding x all_home y aggregate none school_id color acc_road transform group x sort x desc,0.3055555555555556,-0.0054006306,-0.02523984
+mark mark bar data playlist encoding x name y aggregate count name transform group x sort y desc,mark bar data playlists encoding x name y aggregate count name transform group x sort x desc,0.43333333333333335,0.010529257,0.039636523
+mark mark bar data employee_id encoding x is_full_time y aggregate none transform group x sort x desc,mark bar data hiring encoding x is_full_time y aggregate mean employee_id transform group x sort x desc,0.40625,-0.0032741553,0.025587842
+mark mark bar data all_games_percent encoding x team_id y transform aggregate percent,mark point data basketball_match encoding x team_id y aggregate none all_games_percent transform group all_home,0.28125,-0.007846339,0.016090065
+mark mark bar data train_num encoding x aggregate total count y transform sort y asc,mark bar data train encoding x name y aggregate count name transform group x sort y asc,0.34375,0.005369948,0.01036191
+mark bar data annual_entry_exit encoding x location y aggregate none group x mark bar transform sort x,mark arc data station encoding x location y aggregate count location transform group x,0.28125,-0.0032535298,-0.032147497
+mark mark bar data id encoding x meter_300 y aggregate count x,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y asc,0.3,0.0018229475,-0.033035517
+mark mark bar data product encoding x product_name y aggregate mean product_price transform group x,mark bar data products encoding x product_name y aggregate mean product_price transform group x,0.42857142857142855,0.008727714,0.0028935224
+mark data team_data encoding x y transform group x sort y desc,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y desc,0.28125,-0.016725522,0.17438902
+mark transform group data school_id encoding x acc_road y aggregate sum acc_road,mark bar data basketball_match encoding x acc_road y aggregate sum school_id transform group x,0.4230769230769231,0.012978297,-0.11499062
+mark data bar chart series_name encoding x language y aggregate count language transform group x sort y desc,mark bar data tv_channel encoding x language y aggregate count language transform group x sort x desc,0.40625,-0.0051153773,0.022693932
+mark mark bar data installation_date encoding x date y aggregate count installation_date transform group x,mark bar data station encoding x installation_date y aggregate count installation_date transform bin x by weekday,0.3125,-0.0037368257,-0.108497754
+"mark data player_id transform group yearid , sort yearid asc x , mark bar data yearid y encoding x group yearid",mark line data hall_of_fame encoding x yearid y aggregate count yearid transform sort x asc bin x by year,0.225,0.0037232693,0.091160715
+mark data year_player_info encoding x yearid y aggregate count sum ballots transform group x sort x desc,mark line data hall_of_fame encoding x yearid y aggregate count yearid transform sort x desc bin x by year,0.275,-0.00047467183,-0.047376648
+mark data bar graph sales_billion x name y aggregate none transform group sort y desc,mark bar data companies encoding x industry y aggregate count industry transform group x sort x desc,0.2777777777777778,-0.0011896361,0.090761825
+mark data claim_settlement_detail_by_claim_id_list join by x enc y aggregate count number date_claim_settled y transform group x sort y desc,mark bar data settlements encoding x date_claim_settled y aggregate count date_claim_settled transform bin x by year,0.21428571428571427,0.0063005844,-0.071489826
+mark data team_data encoding x team_id y team_id transform group x sort x asc mark bar data team_data encoding x team_id y team_id transform group x sort x asc,mark point data basketball_match encoding x team_id y aggregate none all_games_percent transform group all_home,0.2222222222222222,0.0019963654,-0.02930212
+mark department data department encoding x dept_code y aggregate count dept_name transform group x sort y asc,mark bar data department encoding x school_code y aggregate count distinct dept_name transform sort x asc,0.35294117647058826,-0.0021155542,0.009943068
+"mark data orchestra;
+transform group orchestra_id y no sort;
+mark bar data orchestra encoding x orchestra_id y group orchestra_id sort y asc .",mark bar data orchestra encoding x record_company y aggregate count record_company transform group x sort y asc,0.2631578947368421,-0.0045819823,-0.027753487
+"mark data team_data;
+transform group x team_id y aggregate count home acc_home sort y asc ;",mark bar data basketball_match encoding x all_home y aggregate none team_id color acc_home transform group x sort y asc,0.23809523809523808,-0.003973429,0.06355116
+"mark data team_data;
+transform team_data group by x y aggregate x y;
+mark bar data team_data encoding x y group x y;",mark point data basketball_match encoding x team_id y aggregate none all_games_percent transform group all_home,0.175,-0.004322159,0.021805823
+mark data team_players encoding x position y draft_pick_number color draft_class transform group x sort y desc,"mark bar data match_season encoding x draft_class y aggregate none draft_pick_number transform filter position = ""defender"" sort x desc",0.2619047619047619,0.015235433,0.058830336
+mark bar data customer_id encoding x other_account_details y aggregate count other_account_details transform group x sort y asc,mark bar data accounts encoding x other_account_details y aggregate count other_account_details transform group x sort y asc,0.9333333333333333,-0.006314562,-0.12307292
+"mark x department , y aggregate bar building , transform group x department",mark bar data department encoding x building y aggregate count building transform group x,0.34615384615384615,0.0026179506,0.026275352
+"mark data department , transform group x sort y asc",mark bar data course encoding x dept_code y aggregate sum crs_credit transform group x sort x asc,0.23529411764705882,-0.01492764,0.020413369
+mark data department; transform group x sort y asc numeric gpa; bar x data y aggregate mean gpa department .,mark bar data student encoding x dept_code y aggregate mean stu_gpa transform group x sort x asc,0.2619047619047619,0.003341537,0.12817587
+mark data team_acc_road_by_season aggregate bar data by x y team_id transform group x sort y desc,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort y desc,0.29411764705882354,9.582192e-05,-0.09015344
+mark data students_enrolment_monthly_encapsulated_mark encoding x date_of_enrolment y aggregate count enc data students_enrolment_monthly transform group x bin x mark bar,mark bar data student_course_enrolment encoding x date_of_enrolment y aggregate count date_of_enrolment transform bin x by month,0.3055555555555556,0.014004622,-0.03557597
+mark data people_id encoding x country y aggregate count people_id transform group x sort y desc,mark bar data people encoding x country y aggregate count country transform group x sort y desc,0.4,0.0008870873,-0.08874734
+mark data tourist_attraction_location_mark encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort y desc,mark bar data tourist_attractions encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort y asc,0.34375,-0.001653394,0.12684056
+mark data product encoding x sort price asc y aggregate count name transform group x sort order asc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120 sort x desc,0.20833333333333334,-0.00973676,-0.055034608
+"mark data document_type;
+transform group document_type_code encoding x sort y asc;
+mark bar data document_type encoding x document_type_description y aggregate count transform group y sort y asc;
+### Explanation:
+mark bar data document_type encoding x document_type_description y aggregate count transform group y sort y asc show .",mark bar data ref_document_types encoding x document_type_description y aggregate count document_type_description transform group x sort x desc,0.2608695652173913,0.0118283555,0.05345583
+mark data author_detail_by_password encoding x author_id y aggregate none password transform group x sort y,mark bar data course_authors_and_tutors encoding x password y aggregate none author_id transform sort personal_name,0.34375,-0.003571841,0.016523793
+mark bar dataset password encoding x author_id y aggregate count password transform group x sort x desc,mark bar data course_authors_and_tutors encoding x password y aggregate none author_id transform sort personal_name,0.2777777777777778,-0.0008672117,-0.13868374
+"mark bar data price transform group x sort y desc
+encoding x aggregate y none y encoding y sort y desc
+### Instruction:
+What are the names and prices of products that cost at least 180 , sorted by price decreasing and name ascending . Visualize by pie chart .
+### Input:
+[('code', 'numeric'), ('name', 'categorical'), ('price', 'numeric'), ('manufacturer', 'numeric')]
+### Response: mark
+data bar price transform group x sort y desc y encoding y aggregate y none y sort y desc encoding y",mark arc data products encoding x name y aggregate none price transform filter price >= 180 sort y desc name asc,0.6346153846153846,0.001427778,0.32564715
+mark data dog_data_cleaned encoding x date_of_birth y departed_date transform group x sort y desc,mark bar data dogs encoding x date_departed y aggregate count date_departed transform bin x by weekday,0.15,0.0029960922,-0.20896518
+mark bar data sex encoding x max agg age transform group x sort x asc,mark arc data student encoding x sex y aggregate max age transform group x,0.2647058823529412,-0.024249459,-0.12987962
+mark data bar start_from encoding x ord y aggregate none transform group x sort y desc,mark bar data hiring encoding x start_from y aggregate count start_from transform bin x by weekday,0.23684210526315788,0.01753792,0.07482881
+mark mark bar data cmi_details encoding x detail y aggregate count transform group x sort y desc,mark bar data customer_master_index encoding x cmi_details y aggregate none master_customer_id transform sort x desc,0.3235294117647059,0.00604216,0.009535506
+mark mark card_type_code encoding x transform group y encoding sort y asc,mark arc data customers_cards encoding x card_type_code y aggregate count card_type_code transform group x,0.25,-0.014125202,-0.08897847
+mark data mydata transform group x flag y aggregate count flag desc,mark bar data ship encoding x flag y aggregate count flag transform group x sort y desc,0.3333333333333333,-0.016087476,0.12411341
+mark data employee_mark encoding x hire_date y aggregate department_id transform group x sort y desc,mark bar data employees encoding x hire_date y aggregate mean department_id transform filter hire_date < '2002-06-21' bin x by month,0.20454545454545456,0.030420205,-0.070007324
+mark data films encoding x directed_by y aggregate count director transform group x sort y desc,mark bar data film encoding x directed_by y aggregate count directed_by transform group x,0.3125,-0.013516262,-0.006203383
+mark data ship_data transform group ship_id aggregate count flag encoding x y,mark bar data ship encoding x flag y aggregate count flag transform group x,0.35714285714285715,-0.006028462,0.06747161
+"mark data department ;
+mark bar dept_code encoding x sort y asc ;
+transform group x sort y asc ;
+### Instruction:
+Show the number of each department in each school , and I want to show by the x axis from high to low please .
+### Input:
+[('dept_code', 'categorical'), ('dept_name', 'categorical'), ('school_code', 'categorical'), ('emp_num', 'numeric'), ('dept_address', 'categorical'), ('dept_extension', 'categorical')]
+### Response: bar
+data department ;
+mark bar dept_code encoding x sort y asc ;
+transform group x sort y asc ;
+### Instruction:
+Show the number of each department in each school , and I want to show by the y axis from high to low please .
+### Input:
+[('dept_code', 'categorical'), ('dept_name', 'categorical'), ('school_code', 'categorical'), ('emp_num', 'numeric'), ('dept_address', 'categorical'), ('dept_extension', 'categorical')]
+### Response: bar
+data department ;
+mark bar dept_code encoding x sort y asc ;
+transform group x sort y asc ;
+### Instruction:
+Show the number of each department in each school , and I want to show by the y axis from high to low please .
+### Input:
+[('dept_code', 'categorical'), ('dept_name', 'categorical'), ('school_code', 'categorical'), ('emp_num', 'numeric'), ('dept_address', 'categorical'), ('dept_extension', 'categorical')]
+##",mark bar data department encoding x school_code y aggregate count distinct dept_name transform sort count(distinct dept_name) desc,0.07272727272727272,0.022463914,0.07056992
+mark data people aggregate count people_id transform group people_id sort country asc,mark bar data people encoding x country y aggregate count country transform group x,0.26666666666666666,-0.009940938,-0.13162036
+mark data employee_categorical encoding x city y aggregate count city transform group x sort x desc,mark arc data employee encoding x city y aggregate count city transform group x,0.3333333333333333,0.0018348116,-0.03667231
+"mark encircle data claim settled x date_claim_settled y aggregate count date_claim_settled
+### Hint:
+mark data aggregate count transform sort y asc",mark bar data settlements encoding x date_claim_settled y aggregate count date_claim_settled transform sort y desc bin x by year,0.20454545454545456,-0.0044383854,0.10284768
+mark data bar player encoding x occupation y aggregate count occupation transform group x sort y asc,mark bar data player encoding x occupation y aggregate count occupation transform group x sort y asc,0.5,0.0005425196,-0.06314416
+mark data bar chart meter_300 encoding x y aggregate mean transform sort x desc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort x desc,0.34375,0.0026368909,0.005688116
+"mark data games encoding x team_id y aggregate bar all_games_percent transform group x sort y desc
+### Explanation:
+[('team_id', 'numeric'), ('school_id', 'numeric'), ('team_name', 'categorical'), ('acc_regular_season', 'categorical'), ('acc_percent', 'categorical'), ('acc_home', 'categorical'), ('acc_road', 'categorical'), ('all_games', 'categorical'), ('all_games_percent', 'numeric'), ('all_home', 'categorical'), ('all_road', 'categorical'), ('all_neutral', 'categorical')]",mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort y asc,0.15151515151515152,0.009555761,0.24917974
+mark bar data student encoding x major y aggregate mean age transform group x sort y desc,mark bar data student encoding x sex y aggregate mean age transform group x sort x asc,0.8823529411764706,-0.008130851,-0.05303219
+mark data point_data encoding x position y aggregate frequency points transform group x sort y desc,mark bar data player encoding x position y aggregate count position transform filter points < 30 group x,0.25,-0.010794808,-0.13598529
+"mark transform data encoding x sex y aggregate mean weight
+### Response: bar
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: map
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bubble chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: box plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: box plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: scatter plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: violin plot
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: line chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex y aggregate mean weight transform sort y desc
+### Response: bar chart
+mark data encoding x sex",mark bar data people encoding x sex y aggregate mean weight transform group x sort y asc,0.2222222222222222,0.017533641,0.08954036
+mark data bar_bar encoding x price_in_dollars y aggregate none transform group x sort y asc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700,0.225,-0.011127028,-0.031657666
+mark data bar chart meter_100 encoding x y transform group x sort y desc,mark bar data swimmer encoding x meter_300 y aggregate none meter_100,0.21875,0.00785151,-0.12138888
+"mark data wine;
+transform sort grape no;
+mark bar data grape encoding x sort y count transform sort y asc .",mark bar data wine encoding x grape y aggregate count grape transform group x sort y asc,0.3235294117647059,-0.015024974,0.05511111
+mark data employee_info encoding x y transform group x y aggregate count y sort x asc,mark point data employees encoding x salary y aggregate none manager_id transform filter hire_date < '2002-06-21',0.16666666666666666,-0.0024771634,-0.07026592
+mark data country encoding x country y aggregate proportions killed transform group x sort y desc,mark arc data perpetrator encoding x country y aggregate count country transform group x,0.28125,0.011158723,0.02835843
+mark data bar chart book_category encoding x category y aggregate count category transform sort x asc,mark bar data book_club encoding x category y aggregate count category transform group x sort x asc,0.375,-0.00026521645,-0.025484934
+"mark data bar chart language transform sort y desc x
+### Mark:
+mark bar data language encoding x language y aggregate count",mark bar data tv_channel encoding x language y aggregate count language transform group x sort x desc,0.35294117647058826,-0.009673333,0.08661486
+mark mark bar data train_num encoding x train_num y aggregate count sort y desc,mark bar data train encoding x name y aggregate count name transform group x sort y desc,0.3333333333333333,0.010640664,-0.14263767
+mark data apartments encoding x room_count y transform group x sort x asc,mark bar data apartments encoding x apt_number y aggregate none room_count,0.23333333333333334,-0.014615811,0.24932903
+mark bar data dept_name encoding x building transform group x sort y desc,mark bar data department encoding x building y aggregate count building transform group x sort y desc,0.36666666666666664,0.01582506,-0.2015474
+mark data employees encoding x hire_date y aggregate none group manager_id transform mark bar data employees encoding x hire_date y aggregate sort x asc transform mark bar data employees encoding x hire_date y aggregate none group manager_id transform aggregate none group x sort asc,mark point data employees encoding x salary y aggregate none manager_id transform filter hire_date < '2002-06-21',0.275,0.0057171416,0.037936896
+mark mark bar data class encoding x class y aggregate sum class transform group x sort y desc,mark arc data captain encoding x class y aggregate count class transform group x,0.28125,-0.0031501323,-0.055923805
+mark mark bar data train_num encoding x sort y asc name transform group x sort y asc asc name,mark bar data train encoding x name y aggregate count name transform group x sort x desc,0.3125,-0.01315549,0.012072399
+mark data team_data group by team_id transform sort team_id desc y all_home aggregate y mark bar data group by team_id sort y asc .,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y asc,0.25,0.008572254,0.065093815
+mark data all_games encoding x team_id y all_games_percent transform group x sort x asc,mark arc data basketball_match encoding x all_games y aggregate none all_games_percent,0.21875,0.010535358,-0.0537564
+mark bar data technicians encoding x age y aggregate none transform sort x asc,mark bar data technician encoding x name y aggregate count name transform group x sort age asc,0.8235294117647058,-0.018622486,0.062029347
+"mark enc data start_from transform group x sort y asc
+### Response: bar
+data start_from transform group x sort y asc
+### Response: bar chart
+data start_from transform group x sort y asc",mark bar data hiring encoding x start_from y aggregate count start_from transform bin x by weekday,0.1590909090909091,0.0059312545,0.14251937
+mark data team_data group by team_id sort desc acc_road asc bar data transform group by team_id sort acc_road asc bar encoding x encoding y transform aggregate data sort y asc,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort x desc,0.3333333333333333,0.008233903,-0.12463905
+mark bar data openning_year encoding x y group aggregate sum capacity transform sort y desc,mark line data cinema encoding x openning_year y aggregate sum capacity transform sort x desc bin x by year,0.8157894736842105,-0.0037642359,-0.07360624
+mark data bar graph acc_regular_season x team_id y aggregate acc_regular_season sort x desc,mark bar data basketball_match encoding x all_home y aggregate none team_id color acc_home transform group x sort x desc,0.23684210526315788,0.004063236,-0.021506548
+mark mark bar data crs_credit encoding x dept_code y aggregate total sum crs_credit transform group x sort y asc,mark bar data course encoding x dept_code y aggregate sum crs_credit transform group x sort y asc,0.4375,-0.0024194573,0.080117404
+mark data apartment_list encoding x room_count y aggregate count room_count transform group x sort y desc,mark bar data apartments encoding x apt_number y aggregate none room_count transform sort y desc,0.29411764705882354,-0.0004328657,-0.08644785
+mark data team_data encode x school_id y aggregate mean team_id transform group x sort y desc,mark bar data basketball_match encoding x all_home y aggregate mean school_id transform group x sort y desc,0.3055555555555556,0.0048776465,0.051565185
+mark data exhibition_data_transpose_mark encoding x year y aggregate none transform group y year sort y desc,mark bar data exhibition encoding x year y aggregate count year transform filter ticket_price < 15 group theme,0.21428571428571427,-0.00886929,0.04444915
+"mark gameid aggregate hgroup id transform sort y desc
+### Explanation:
+mark bar data gameid encoding x gameid y aggregate transform sort y desc",mark point data plays_games encoding x gameid y aggregate sum hours_played transform group x,0.2,0.0034220023,0.05484903
+mark mark bar data vote_id encoding x state y aggregate count state transform group x sort y desc,mark arc data votes encoding x state y aggregate count state transform group x,0.3125,0.006294299,-0.122937486
+"mark data people;
+mark bar data weight y asc order data date_of_birth x desc .",mark bar data people encoding x date_of_birth y aggregate none weight transform sort y desc,0.2222222222222222,-0.019824868,0.10139765
+mark data tourist_attraction_mark encoding x how_to_get_there y aggregate none transform group how_to_get_there sort y asc,mark bar data tourist_attractions encoding x how_to_get_there y aggregate count how_to_get_there transform group x sort x asc,0.34375,0.016403351,-0.07465023
+mark data team_info_bar_chart encoding x acc_road y aggregate count acc_road transform group x sort y desc,mark bar data basketball_match encoding x acc_road y aggregate count acc_road transform group x sort y desc,0.4,0.003718045,0.098824054
+"mark data train;
+transform train encoding x y origin;
+bar y aggregate count origin;
+### Explanation:
+mark bar data , encoding x y aggregate count origin .",mark bar data train encoding x origin y aggregate count origin transform group x sort y asc,0.25,-0.009096466,-0.044151157
+"mark bar data days encoding x transform group x sort y desc
+### Explanation:
+mark bar data , transform group x y aggregate mean credit sort y desc .",mark bar data course encoding x days y aggregate mean credits transform group x sort credits,0.8,-0.010780534,-0.012446031
+mark data bar meter_100 transform group x sort y desc,mark bar data swimmer encoding x time y aggregate none meter_100 transform sort y desc,0.3,0.0011204127,-0.018923506
+mark data bar meter_300 encoding x id y transform sort y asc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y asc,0.39285714285714285,3.363751e-05,-0.017916366
+mark data product_category_code encoding x product_name y aggregate product_category_code transform group sort product_name,mark arc data products encoding x product_category_code y aggregate mean product_price transform group x,0.3,0.005337122,0.10038267
+mark bar data people_id encoding x weight y transform group height sort y asc,mark bar data people encoding x date_of_birth y aggregate none weight transform sort y asc,0.29411764705882354,-0.018142689,-0.040558696
+mark data transfiguration_2017_meet_2017 encoding x id y aggregate none name transform group sort y asc,mark bar data swimmer encoding x name y aggregate none id transform sort x asc,0.375,0.02240486,-0.040206373
+mark data bar chart time x sorting y asc sorting g meter_100 y transform group x sort y asc data metric_100 y transform group x sort y asc transform sort y desc,mark bar data swimmer encoding x time y aggregate none meter_100,0.175,-0.007952186,0.14442655
+mark data good_customers encoding x first_name y gender_mf transform sort y asc,mark bar data customers encoding x first_name y aggregate none gender_mf transform filter good_or_bad_customer = 'good' sort x asc,0.2631578947368421,0.012265411,-0.06358129
+mark data bar chart city encoding x city y transform sort y desc,mark bar data station encoding x city y aggregate max lat transform group x sort x desc,0.3125,-0.015586541,-0.13523787
+mark mark bar data budget_type_code encoding x budget_type_code y transform sort y desc,mark arc data documents_with_expenses encoding x budget_type_code y aggregate count budget_type_code transform group x,0.23333333333333334,0.018899802,0.035366774
+mark data team_id school_id team_name acc_regular_season acc_percent acc_home acc_road all_games all_games_percent all_home all_road all_neutral transform group y sort desc all_games_percent,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort y desc,0.16,0.0008214107,-0.030171916
+mark mark bar data people encoding x sex y transform sort y asc,mark arc data people encoding x sex y aggregate mean weight transform group x,0.25,-0.01781736,0.011258766
+mark mark bar data employees encoding x job_id y aggregate none salary transform group sort job_id,mark bar data employees encoding x job_id y aggregate sum salary transform filter hire_date < '2002-06-21' group x,0.3157894736842105,0.017497487,0.006315902
+mark mark bar data all_games encoding x all_games_percent y transform sort y asc,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort x asc,0.39285714285714285,-0.00049766875,-0.03236322
+mark data bar product encoding x name y aggregate count price transform sort y desc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120 sort y desc,0.2857142857142857,-0.0061122254,0.31532633
+mark bar data catalog_entry_name encoding x sort price_in_dollars asc,mark bar data catalog_contents encoding x catalog_entry_name y aggregate none capacity transform filter price_in_dollars > 700 sort x asc,0.25,-0.004499158,-0.25161654
+mark mark bar data budget_type_code encoding x sort y asc data budget_type_code transform group sort y,mark arc data documents_with_expenses encoding x budget_type_code y aggregate count budget_type_code transform group x,0.26666666666666666,-0.0013667056,0.28189743
+mark mark bar data author_id encoding x gender_mf y transform sort y,mark bar data course_authors_and_tutors encoding x family_name y aggregate none gender_mf transform sort personal_name,0.3,0.009815082,-0.23883286
+mark data trans_ship encoding x flag y transform sort y desc,mark bar data ship encoding x flag y aggregate count flag transform group x sort x desc,0.3,-0.013708591,0.019622654
+mark data bar chart name product encoding x price y transform sort y desc,mark arc data products encoding x name y aggregate none price transform filter price >= 180 sort y desc name asc,0.23809523809523808,0.0051318705,-0.13412493
+mark data transit_stations encoding x installation_date y aggregate count transform group sort x,mark bar data station encoding x installation_date y aggregate count installation_date transform bin x by weekday,0.2647058823529412,0.008698879,0.10374053
+mark enc_school_data bar data school encoding x sort y enr asc,mark bar data college encoding x cname y aggregate min enr transform group state sort y asc,0.25,-0.034732364,-0.049444214
+mark mark bar data singer encoding x age y transform sort y desc,mark bar data singer encoding x country y aggregate mean age transform group x,0.3,0.039234422,-0.062445357
+mark data authors encoding x family_name y aggregate bar gender_mf transform sort y asc,mark bar data course_authors_and_tutors encoding x family_name y aggregate none gender_mf transform sort personal_name,0.34375,-0.009613059,0.119776845
+mark data department encoding x dept_code y aggregate count dept_name transform group dept_code sort y desc,mark bar data department encoding x school_code y aggregate count distinct dept_name,0.2647058823529412,0.0041749906,-0.1168202
+mark data team_id school_id team_name acc_regular_season acc_percent acc_home acc_road all_games all_games_percent all_home all_road all_neutral encoding x sort y group y desc,mark bar data basketball_match encoding x all_games y aggregate none all_games_percent transform sort x desc,0.18,0.00045541953,0.012812465
+mark mark data team encoding x acc_regular_season y acc_percent transform sort y asc,mark point data basketball_match encoding x school_id y aggregate none all_games_percent transform group acc_regular_season,0.19444444444444445,-0.017061839,0.029080257
+mark data bar id encoding x name transform group y aggregate sum name,mark bar data swimmer encoding x name y aggregate none id transform sort x desc,0.3125,-0.014069714,0.17866372
+mark mark bar data meter encoding x meter_300 y transform sort y asc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort y asc,0.3333333333333333,0.023235777,-0.22036874
+mark mark bar data product_price encoding x product_category_code transform sort product_price asc,mark arc data products encoding x product_category_code y aggregate mean product_price transform group x,0.21875,0.0031053154,0.013736129
+mark mark bar data dept encoding x building y aggregate count building transform sort y asc,mark bar data department encoding x building y aggregate count building transform group x,0.3333333333333333,-0.0017045662,0.08007005
+mark mark bar data investor encoding x sort investor y transform aggregate encircle,mark arc data entrepreneur encoding x investor y aggregate count investor transform group x,0.26666666666666666,-0.030223384,0.054831326
+mark mark bar data services encoding x services y transform sort y desc,mark bar data station encoding x services y aggregate count services transform group x,0.2857142857142857,0.026435811,-0.10812725
+mark mark bar data student encoding y transform sort y desc,mark bar data student encoding x dept_code y aggregate mean stu_gpa transform group x sort y desc,0.3,-0.015975054,0.050097257
+mark mark bar data price encoding x price y transform sort y asc,mark bar data products encoding x name y aggregate none price transform filter price between 60 and 120,0.21052631578947367,0.037724763,-0.011711344
+mark mark bar data school encoding x aggregate count school_id transform sort x,mark arc data school encoding x county y aggregate count county transform group x,0.26666666666666666,-0.040102378,0.28230533
+mark mark bar data fate encoding x aggregate count sort y desc,mark bar data mission encoding x fate y aggregate count fate transform group x sort x asc,0.3333333333333333,0.017813597,-0.29756194
+mark bar data room encoding x decor y transform group decor,mark bar data rooms encoding x decor y aggregate min baseprice transform group x sort y desc,0.28125,-0.02523823,0.010519102
+mark mark bar data employee encoding x aggregate data transform sort y desc,"mark line data employees encoding x hire_date y aggregate none manager_id transform filter salary between 8000 and 12000 and commission_pct != ""null"" or department_id != 40",0.125,0.0024925545,-0.05598484
+mark mark bar data team encoding x team_id y acc_road transform sort y asc,mark bar data basketball_match encoding x all_home y aggregate none school_id color acc_road transform group x sort y asc,0.2631578947368421,0.027655717,0.10913445
+mark mark bar data id encoding x meter_300 y transform sort y desc,mark bar data swimmer encoding x meter_300 y aggregate none id transform sort x desc,0.39285714285714285,0.0046852417,-0.055748314
+mark guest_id encoding x datum y encoding x gender_code encoding x sort y desc,"mark bar data guests encoding x date_of_birth y aggregate count date_of_birth transform filter gender_code = ""male"" bin x by weekday",0.11363636363636363,-0.017081086,-0.017131373
+mark enc data winery x year y aggregate max price transform sort y desc,mark line data wine encoding x year y aggregate max price transform group x,0.2647058823529412,0.008302737,-0.07047038
+mark mark bar data applications encoding x software_platform y transform group y,mark arc data device encoding x software_platform y aggregate count software_platform transform group x,0.2857142857142857,0.003491656,0.058343604
+mark datamark bar date_moved_in encoding x y sort y desc,mark bar data customer_events encoding x date_moved_in y aggregate count date_moved_in transform sort y asc bin x by year,0.19444444444444445,0.0019143177,0.17537582
