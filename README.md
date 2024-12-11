@@ -4,4 +4,6 @@ finetuning.ipynb is the code used to finetune the llama 7b model to our visualiz
 
 rlhf-bert.ipynb then takes this finetuned model and performs reinforcement learning on it, using the SON model I made outlined in my thesis.
 
+rlhf2.ipynd is the attempt to create the SON from scratch without bert, this is a direction that needs to be explored more.
+
 For a detailed description of the SON and how it works please read through Thesis.pdf
