@@ -120,12 +120,11 @@ Check out my personal research logs in [`/research`](./research):
 - Chain-of-thought attempts
 - ChatGPT-generated rewards for PPO
 
---
+---
 
 ## Author
 
 **Raffaele Leo**  
-Sapienza Università di Roma  
 Raff1343@gmail.com
 
 ---
