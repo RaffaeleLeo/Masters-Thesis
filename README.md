@@ -1,16 +1,136 @@
-# This is the code that accompanies my thesis titled "Like Father Like SON"
+# Like Father Like SON
+**Automatically Generating Rewards for PPO-Based Visualization Recommendation Systems**
+
+> My master's thesis exploring how to improve reinforcement learning for NL-to-Visualization systems using a Stable Observer Network (SON).
+
+---
+
+## Overview
+
+Training reinforcement learning models to generate effective visualizations from natural language input is hard — especially when defining rewards is subjective and expensive.
+
+This project proposes a **Stable Observer Network (SON)** — a lightweight transformer-based model that learns how the PPO agent responds to rewards, then takes over to generate more stable, adaptive reward signals. 
+
+It was built and tested in Amazon SageMaker using the [NVBench](https://github.com/vis-nlp/NVBench) dataset and a modified LLaMA model.
+
+---
+
+## Architecture
+
+Our Stable Observer Network (SON) is designed to observe PPO training behavior and learn how to generate rewards that improve convergence.
+
+---
+
+### SON Model Overview
+
+The SON consists of a TinyBERT model with a custom loss function, trained to produce continuous reward values from PPO predictions and ground truth pairs.
+
+![SON Architecture](./assets/structure.png)
+
+---
+
+### Observation Phase
+
+During the first 200 PPO learning steps, SON observes the PPO model's behavior using:
+
+- Discrete rewards
+- PPO metrics (policy loss, value loss, KL divergence)
+
+This phase helps SON learn how to model rewards before taking over.
+
+![Observation Phase](./assets/observation.png)
+
+---
+
+### Inference Phase
+
+Once trained, SON takes over as the sole reward model — generating smooth, feedback-driven rewards based on model behavior.
+
+![Inference Phase](./assets/inference.png)
+
+---
+
+### Custom Loss Function
+
+The SON is trained using a **custom reward regression loss** that incorporates PPO feedback. This balances how closely SON matches the discrete reward (`R`) with how it impacts the PPO’s performance (`ΔPL`, `ΔVL`):
+
+\[
+L = \alpha (R' - R) + \beta \frac{w_1 \Delta PL + w_2 \Delta VL}{(R' - R) + \epsilon}
+\]
+
+Where:
+- `R'` = SON’s predicted reward
+- `R` = discrete reward from original labeling
+- `PL` = policy loss
+- `VL` = value loss
+
+This lets SON learn not just to mimic discrete labels, but to improve PPO performance directly.
+
+![Custom Loss Function](./assets/custom_reward.png)
 
 
-Lamma3-finetuning.ipynb finetunes a lamma 3.0 model on the NVBench visualization dataset, I only fine-tune it on 200 instances to keep the model weak so the work done by the PPO learning and my SON model is more visual
+---
 
+## Results
 
-SON.ipynb then takes this fine-tuned model and performs reinforcement learning on it, using the SON model I made outlined in my thesis. This file has the code for training SON and fine-tuning the lamma model using PPO learning.
+#### Final Output Quality
+![Final Results](./assets/SON_compile.png)
 
+#### X-Axis Prediction Accuracy
+![X-Axis Accuracy](./assets/SON_X.png)
 
-For a detailed description of the SON and how it works, please read through Thesis.pdf
+#### Y-Axis Prediction Accuracy
+![Y-Axis Accuracy](./assets/SON_Y.png)
 
+---
 
-# WORK ADDED AFTER
+## Files
 
+- `Lamma3-finetune.ipynb` - initial fine-tune before we start PPO Learning
+- `SON.ipynb` – full implementation in a cleaned-up notebook
+- `Dissertation.pdf` – thesis defense presentation
+- `like-father-like-son-thesis.pdf` – full master's thesis document
+- `assets/` – diagrams and result graphs used in this README
+- `reaserch/` - any continued reaserch I have conducted after the thesis was done
 
-After my thesis was done, I added chatgpt to be used to recommend rewards before training the Stable Observer Network (SON). Chatgpt was added in the initial 200 iterations of PPO learning, giving better feedback to training our SON model, increasing the performance on outputting the correct graph type and data type by 10 and 15 percent respectively.
+---
+
+## Full Thesis
+
+For in-depth methodology, experiments, and math:
+
+[Like Father Like SON – Master's Thesis (PDF)](./Thesis.pdf)
+
+---
+
+## Built With
+
+- Hugging Face Transformers (TinyBERT)
+- PPO from HuggingFace RLHF
+- NVBench Dataset
+- Amazon SageMaker
+
+---
+
+## Ongoing Work
+
+Check out my personal research logs in [`/research`](./research):
+
+- Prompt engineering with LLaMA 3.0
+- Chain-of-thought attempts
+- ChatGPT-generated rewards for PPO
+
+--
+
+## Author
+
+**Raffaele Leo**  
+Sapienza Università di Roma  
+Raff1343@gmail.com
+
+---
+
+## 📝 License
+
+MIT License — free to use and adapt.
+
