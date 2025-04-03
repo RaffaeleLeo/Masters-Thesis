@@ -39,5 +39,5 @@ While the baseline needs more work, this work shows that:
 ---
 
 ## File Index
-- [`Continued Reaserch.pdf`](./Continued Reaserch.pdf): Full notes and figures from my research log
+- [`Continued Research.pdf`](./Continued Research.pdf): Full notes and figures from my research log
 - [`gpt_reward_prompt.txt`](./gpt_reward_prompt.txt): Prompt used with GPT as a reward judge
