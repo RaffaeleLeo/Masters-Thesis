@@ -54,9 +54,9 @@ Once trained, SON takes over as the sole reward model — generating smooth, fee
 
 The SON is trained using a **custom reward regression loss** that incorporates PPO feedback. This balances how closely SON matches the discrete reward (`R`) with how it impacts the PPO’s performance (`ΔPL`, `ΔVL`):
 
-\[
+$$
 L = \alpha (R' - R) + \beta \frac{w_1 \Delta PL + w_2 \Delta VL}{(R' - R) + \epsilon}
-\]
+$$
 
 Where:
 - `R'` = SON’s predicted reward
